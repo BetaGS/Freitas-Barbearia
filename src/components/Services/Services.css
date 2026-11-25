@@ -1,0 +1,12 @@
+.services { background: var(--bg-2); }
+.menu { display: grid; gap: 16px; }
+.menu__item { position: relative; padding: 22px 20px; border: 1px solid var(--line); background: var(--bg); border-radius: 4px; }
+.menu__item.is-featured { border-color: var(--gold); }
+.menu__badge { position: absolute; top: -12px; right: 16px; background: var(--gold); color: #111; font-size: .75rem; font-weight: 600; padding: 2px 10px; border-radius: 2px; }
+.menu__item h3 { font-size: 1.25rem; margin-bottom: 6px; }
+.menu__item p { color: var(--muted); font-size: .95rem; }
+.services__cta { width: 100%; margin-top: 32px; }
+@media (min-width: 760px) {
+  .menu { grid-template-columns: 1fr 1fr; gap: 20px; }
+  .services__cta { width: auto; }
+}

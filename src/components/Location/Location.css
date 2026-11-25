@@ -1,0 +1,15 @@
+.location { display: grid; gap: 24px; border: 1px solid var(--line); background: var(--bg-2); border-radius: 4px; overflow: hidden; }
+.location__info { padding: 24px 20px; display: flex; flex-direction: column; gap: 16px; align-items: flex-start; }
+.location__info h3 { font-size: 1.3rem; color: var(--gold); }
+.location__info address { font-style: normal; color: var(--muted); }
+.location__info .btn { width: 100%; }
+.location__hours { width: 100%; }
+.location__hours li { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.location__hours span { color: var(--muted); }
+.location__map { width: 100%; min-height: 320px; border: 0; filter: invert(92%) hue-rotate(180deg) grayscale(.4); }
+@media (min-width: 860px) {
+  .location { grid-template-columns: 1fr 1.2fr; gap: 0; }
+  .location__info { padding: 32px; }
+  .location__info .btn { width: auto; }
+  .location__map { min-height: 100%; }
+}

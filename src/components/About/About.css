@@ -1,0 +1,5 @@
+.about { background: var(--bg-2); }
+.about__grid { display: grid; gap: 28px; }
+.about__item h3 { font-size: 1.2rem; margin: 12px 0 6px; }
+.about__item p { color: var(--muted); font-size: .95rem; }
+@media (min-width: 760px) { .about__grid { grid-template-columns: repeat(4, 1fr); } }
